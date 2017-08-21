@@ -1,4 +1,4 @@
-package com.j4ftech.simplemeditation;
+package applicatives.j4ftech.Mantrix;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.j4ftech.simplemeditation", appContext.getPackageName());
+        assertEquals("com.j4ftech.Mantrix", appContext.getPackageName());
     }
 }

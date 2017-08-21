@@ -1,21 +1,16 @@
-package com.j4ftech.simplemeditation;
+package applicatives.j4ftech.Mantrix;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.j4ftech.simplemeditation.R;
 
-import java.lang.reflect.Array;
 import java.util.Random;
 
 /**

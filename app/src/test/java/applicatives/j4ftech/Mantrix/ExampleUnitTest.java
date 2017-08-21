@@ -1,4 +1,4 @@
-package com.j4ftech.simplemeditation;
+package applicatives.j4ftech.Mantrix;
 
 import org.junit.Test;
 

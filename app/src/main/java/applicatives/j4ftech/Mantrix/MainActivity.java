@@ -1,4 +1,4 @@
-package com.j4ftech.simplemeditation;
+package applicatives.j4ftech.Mantrix;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import com.j4ftech.simplemeditation.R;
 
 import java.util.ArrayList;
 import java.util.List;
