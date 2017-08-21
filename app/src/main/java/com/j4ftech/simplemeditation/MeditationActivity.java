@@ -2,6 +2,7 @@ package com.j4ftech.simplemeditation;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -26,13 +27,19 @@ public class MeditationActivity extends AppCompatActivity {
 
     String[] wordsArray = new String[4];
     CountDownTimer timer;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_meditation);
 
+        //set audio file for loop
+        mp = MediaPlayer.create(MeditationActivity.this,R.raw.crickets);
 
+        //start sound
+        mp.setLooping(true);
+        mp.start();
 
         wordsArray[0]="RELAX";
         wordsArray[1]="NO STRESS";
@@ -57,6 +64,10 @@ public class MeditationActivity extends AppCompatActivity {
 
             public void onFinish() {
                 timerTextView.setText("done!");
+                //end song on media player
+                 mp.stop();
+                //return to main menu
+                finish();
             }
         };
 
@@ -65,6 +76,7 @@ public class MeditationActivity extends AppCompatActivity {
         findViewById(R.id.back_to_menu).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mp.stop();
                 finish();
             }
         });
