@@ -12,7 +12,8 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="8dp"
+        android:gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,7 +94,11 @@
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="292dp"
-                android:onClick=""/>
+                android:onClick=""
+                android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"/>
         </LinearLayout>
 
 
